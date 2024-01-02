@@ -1,0 +1,197 @@
+<!-- 
+    node_modules: don't change the name of the folder
+    public-index.html
+    src-index.js, index.css, App.js, App.css
+    package.json -don't delete this
+ -->
+<!-- 
+    Module System: we will practise this in standalone manner using only node
+    import
+    export
+    scope of all the variables and functions that are being declared
+    a.js chooses to export
+    b.js you cannot use anything without explicity importing
+    c.js 
+  -->
+<!-- 
+    How the React Application is Wired-
+    The linking of all the files 
+  -->
+<!-- Notes for ReactJS installation
+    npm install npx
+    npx, yarn, npm are all called as package managers
+    NPM-Node Package Manager
+    
+    npx create-react-app my-app1
+    cd my-app1
+    npm start
+
+    We have to understand the following-
+    1) what is NPM?
+    2) Module System used in ReactJS, Node applications 
+    and also vanilla JS applications
+    3) node_modules
+
+    Frameworks-Angular
+    Libraries-React
+
+    React has it's own DOM-Virtual DOM
+    1) Create UI-Functional Components, Class Components
+    2) Event Management
+    3) State Management
+    4) Hooks
+    5) Creating Re-usable Components
+    6) Navigation/Routing
+    7) State Management
+
+    Problem: if you are facing create-react-app issue
+    Solution:
+
+    npm install npx
+
+    npm init
+    npm install create-react-app
+    npx create-react-app myapp
+    npm cache clean --force
+    npx create-react-app myapp
+    http://localhost:3000/
+
+    Port No-3000
+    localhost-server name or address 
+    where your application is hosted or running
+    npm create-react-app my-app1
+    cd my-app1
+    npm start
+    -->
+
+<!-- 
+        Web Application
+        Hosted
+        Port Nos
+        Request-Response:Servlets and JSP (Java)
+        ReactJS, Angular-SPA Single Page Applications
+        Node: Web-App
+        Express which has been built on top on Node-Request-Response
+        Node-Backend, MongoDB, Restful API
+        State Management, Session Management, Navigation
+        Web Servers, Web Application Servers, Enterprise Application Servers(Java/J2EE)
+        AWS, AZURE-Cloud Hosting, Microservices-Docker and Kubernetes
+     -->
+
+<!-- 
+        When you're programming in ReactJS, you stop using Traditional DOM
+        ReactJS takes over through Virtual DOM, Reconcialition,
+        you've to stop using regular DOM-document
+        Directory
+        Checking into GitHub: we will not checkin node_modules
+        npm start
+        npm install
+        package.json: Manifest file 
+        Springboot: Maven:  pom.xml
+        TDD:Test Driven Development: Jest
+        build: 
+        JUnit, Mockito
+      -->
+<!-- 
+        Parent Tag
+        Child Tag
+        Parent Child Communication-
+        Parent Tag wants to pass data to the child Tag
+        Communication: Parent to Child {props}-function or data
+        <tagname attribute="1" attribute="2">
+        Communication: Child wants to pass something back to the Parent
+       -->
+<!--  {/* Conditional Rendering */}
+      <h3>{props.offer ? props.offer : "No offer"}</h3>
+ -->
+<!-- 
+  Using Images in ReactJS
+  import AlexaImage from './images/alexa.png';
+  import CortanaImage from './images/cortana.png';
+  import SiriImage from './images/siri.png';
+-->
+<!-- 
+    Lifting up the State-
+    Moving or passing data from Child Component to Parent
+    a Function defined in the parent component 
+    will be invoked by the child component
+   -->
+<!-- 
+    ReactJS-state management and UI update hacks
+-->
+<!-- 
+  AnimalShow ~ ProfileCard
+  AnimalApp ~ ProfileApp
+ -->
+<!-- 
+  Accordion
+  AccordionPage
+  AccordionApp
+
+  npm install react-icons
+ -->
+
+my-app0>npm install react-icons
+package.json
+my-app0>npm start
+[{
+title:
+paragraph:
+},{
+title:
+paragraph:
+},{
+title:
+paragraph:
+}]
+
+<!-- 
+  arrays/ArrayComponent.js
+  arrays/ArrayPage.js
+  src/ArrayApp.js
+ -->
+
+<!-- 
+  UI Design, Component Architecture, Navigation (React Router), 
+  State Management: 
+  LocalStorage, Cookies, Session Management (User State), 
+  Application State and Component State
+  Application State: useContext(), Redux State (Third Party)
+
+  RESTful API-external, JSON server (pseudo DB), MongoDB-Mongoose
+  Our own REST API, Authentication, Middleware-Node ()
+  Web Application from Backend-Express (Request, Response)
+ 
+  Hooks-
+  useState()-simple reading and updating the state, 
+  updating from previous state
+  Service-we used an object to manage our state
+  useEffect()-syntax
+  useContext()-Refactor the BookApp
+  Refactor the BookApp-JSONServer, useEffect, useContext
+  useMemo, useCallback, useReducer
+  callback hell, Promises, Async/Await-for calling any API-JavaScript
+
+  BookApp:
+  REFACTOR-
+  Central Data-books array
+  array is only in-memory
+  data will come from a database
+  so it will have to be fetched->useEffect()
+  1st Implementation: we were passing our data and its related functions
+  from component to component as props
+  data: SCOPE- to whom all should it be visible?
+  props communication:we can pass data and functions
+
+  -->
+
+<!-- 
+    Steps to create and use a context-
+    Create Context
+    import { createContext, useState } from 'react';
+    const BooksContext = createContext();
+    similar to const [count,setCount]=useState();
+    If you want to use a context/existing context
+    import {useContext} from 'react'
+    const {}=useContext(BooksContext);
+   -->

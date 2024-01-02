@@ -1,0 +1,44 @@
+<!-- 
+    We will create the following files-
+    BookApp.js,BookList.js,BookCreate.js,BookShow.js,BookEdit.js
+
+BookApp.js
+    -This is the main application file
+    -It will hold the [books,setBooks]=useState([])state hook
+    -it will also contain the  following functions
+    editBookById
+    deleteBookById
+    createBook
+
+    It will render two components-
+    <BookList>
+    <BookCreate>
+
+BookList.js will iterate over the books array 
+and display each Book Info using BookShow component
+BookShow.js
+        Will Display the Book Info
+BookCreate.js
+        Form to get Book Data from the User
+        When the user click on Edit, then it will display BookEdit
+BookEdit.js
+        Form to edit existing Book Data
+ -->
+
+const A=()=>{
+const f1=()=>{
+console.log('this will execute from A');
+}
+return (<B onSubmit={f1} />)
+}
+
+const B({onSubmit}){
+
+const f1=()=>{
+onSubmit();
+}
+
+return(
+
+)
+}
